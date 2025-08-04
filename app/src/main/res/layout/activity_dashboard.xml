@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DashboardActivity">
+
+    <!-- Section 1: Top Bar with History Button and App Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/top_bar_bg"
+        android:padding="8dp">
+
+        <!-- History Button -->
+        <ImageButton
+            android:id="@+id/btn_history"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_history"
+            android:contentDescription="History"
+            app:tint="@android:color/white"/>
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/tv_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="𝐖𝐚𝐯𝐞𝐥𝐞𝐭"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!-- Section 2: Mic Button and Timer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <!-- Mic Button -->
+        <ImageButton
+            android:id="@+id/btn_mic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_mic_circle"
+            android:src="@drawable/ic_mic"
+            android:contentDescription="Record"
+            app:tint="@android:color/white"/>
+
+        <!-- Timer -->
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@color/wavelet_text_light"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Animation Placeholder -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:lottie_fileName="your_animation.json"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false"/>
+    </LinearLayout>
+
+    <!-- Section 3: Bottom Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+    <ImageButton
+        android:id="@+id/btnPause"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circular_button_background"
+        android:src="@drawable/ic_pause"
+        android:layout_margin="8dp"
+        android:contentDescription="Pause"
+        app:tint="@android:color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circular_button_background"
+        android:src="@drawable/ic_play"
+        android:layout_margin="8dp"
+        android:contentDescription="Play"
+        app:tint="@android:color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circular_button_background"
+        android:src="@drawable/ic_stop"
+        android:layout_margin="8dp"
+        android:contentDescription="Stop"
+        app:tint="@android:color/white"
+        />
+    </LinearLayout>
+</LinearLayout>

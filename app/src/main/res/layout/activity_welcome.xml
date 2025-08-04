@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_gradient"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_wavelet_logo"
+            android:contentDescription="App Logo"
+            android:layout_gravity="center" />
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="𝐖𝐚𝐯𝐞𝐥𝐞𝐭"
+            android:textColor="#0B0B0B"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center" />
+
+        <!-- Thought Text -->
+        <TextView
+            android:id="@+id/appThought"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ride the waves of simplicity."
+            android:textColor="#423B3B"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center" />
+
+        <!-- Get Started Button -->
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Started"
+            android:textStyle="bold"
+            android:backgroundTint="#18D9ED"
+            android:textColor="#0D0D0D"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

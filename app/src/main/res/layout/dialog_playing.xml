@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="#A78CD7">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:lottie_rawRes="@raw/playing_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:background="@drawable/bg_rounded_light_rect"/>
+
+    <TextView
+        android:id="@+id/tvSelectedAudioName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="audio_20250719.mp4"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="right">
+
+
+        <ImageButton
+            android:id="@+id/btnRename"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_rename"
+            android:background="@drawable/bg_rounded_light_rect"
+            android:contentDescription="Delete" />
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_delete"
+            android:background="@drawable/bg_rounded_light_rect"
+            android:contentDescription="Delete" />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_share"
+            android:background="@drawable/bg_rounded_light_rect"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Share" />
+    </LinearLayout>
+</LinearLayout>
